@@ -1,0 +1,47 @@
+<!-- functionality -->
+<h1>name:{{name}}</h1>
+<button (click)="show()">onclick</button>
+
+<!-- count -->
+<button (click)="increment()">increment</button>
+<button (click)="decrement()">decrement</button>
+<h1>count:{{count}}</h1>
+
+<!-- <!..ngif..> -->
+<h1 *ngIf="showtext">click on botton</h1>
+<button (click)="change()">modify</button>
+<!-- <p (click)="add()" *ngIf="para">add</p> -->
+
+<!-- ngfor -->
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>NAME</th>
+            <th>CLASS</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let each of list">
+            <td>{{each.id}}</td>
+            <td>{{each.name}}</td>
+            <td>{{each.class}}</td>
+        </tr>
+    </tbody>
+</table>
+
+<button (click)="fun()">object</button>
+<table>
+    <thead>
+        <th *ngFor="let keys of s1">{{keys}}</th>
+      
+    </thead>
+    <tbody>
+        <tr *ngFor="let values of s2">
+            <td>{{values.company}}</td>
+            <td>{{values.experience}}</td>
+            <td>{{values.skills}}</td>
+
+        </tr>
+    </tbody>
+</table>
