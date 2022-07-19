@@ -34,14 +34,13 @@ obj:Object={
 data1:{company:"capgemini",experience:1,skills:"angular"},
 data2:{company:"tcs",experience:1,skills:"angular"},
 data3:{company:"ms",experience:1,skills:"angular"}}
-
+text:string="";
+even:any=true;
   ngOnInit(): void {
   }
 
   show() {
     this.name ="priyanth";
-
-
   }
   increment() {
     this.count = +this.count + 1;
@@ -55,5 +54,13 @@ data3:{company:"ms",experience:1,skills:"angular"}}
 fun(){
  this.s1=Object.keys(this.obj);
  this.s2=Object.values(this.obj);
+}
+para(){
+  this.text="sampreethi";
+  console.log(this.text)
+}
+erd(){
+  this.even=!this.even;
+  console.log(this.even)
 }
 }

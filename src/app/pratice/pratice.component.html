@@ -13,19 +13,19 @@
 <!-- <p (click)="add()" *ngIf="para">add</p> -->
 
 <!-- ngfor -->
-<table>
+<table class="border">
     <thead>
-        <tr>
-            <th>ID</th>
-            <th>NAME</th>
-            <th>CLASS</th>
+        <tr class="border">
+            <th class="border">ID</th>
+            <th class="border">NAME</th>
+            <th class="border">CLASS</th>
         </tr>
     </thead>
-    <tbody>
-        <tr *ngFor="let each of list">
-            <td>{{each.id}}</td>
-            <td>{{each.name}}</td>
-            <td>{{each.class}}</td>
+    <tbody class="border">
+        <tr *ngFor="let each of list" class="border">
+            <td class="border">{{each.id}}</td>
+            <td class="border">{{each.name}}</td>
+            <td class="border">{{each.class}}</td>
         </tr>
     </tbody>
 </table>
@@ -45,3 +45,6 @@
         </tr>
     </tbody>
 </table>
+<p (click)="para()">text</p>
+<p *ngIf="even">even number</p>
+<button (click)="erd()">button</button>
